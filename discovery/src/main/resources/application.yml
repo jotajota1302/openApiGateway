@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: discovery
+server:
+  port: 8761
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_HOST:localhost}:${DISCOVERY_PORT:8761}/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true 
+  server:    renewal-percent-threshold: 0.85
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+         
