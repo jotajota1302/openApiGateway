@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>com.ntt.es</groupId>
-	<artifactId>person-service</artifactId>
+	<artifactId>address-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>micro-address</name>
 
